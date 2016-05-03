@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="carlosaguileraacevedo_holamundo.miprimerholamundo.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_name"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Nombre" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_lastname"
+        android:layout_below="@+id/id_name"
+        android:layout_alignLeft="@+id/id_name"
+        android:layout_alignStart="@+id/id_name"
+        android:hint="Apellido" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saludo"
+        android:id="@+id/btn_action"
+        android:layout_below="@+id/id_lastname"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_message"
+        android:layout_below="@+id/btn_action"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="103dp"
+        android:text="Mensaje..." />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[X] Salir"
+        android:id="@+id/btn_exit"
+        android:layout_below="@+id/btn_action"
+        android:layout_alignLeft="@+id/btn_action"
+        android:layout_alignStart="@+id/btn_action" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva Activity"
+        android:id="@+id/btn_new_activity"
+        android:layout_below="@+id/btn_exit"
+        android:layout_alignLeft="@+id/btn_exit"
+        android:layout_alignStart="@+id/btn_exit"
+        android:onClick="changeActivity" />
+
+</RelativeLayout>
